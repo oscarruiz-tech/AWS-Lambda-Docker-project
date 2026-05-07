@@ -30,3 +30,10 @@ def handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Hello from Lambda Containers (Oscar Ruiz Project)!')
     }
+FROM public.ecr.aws/lambda/python:3.9
+
+# Copy function code
+COPY app.py ${LAMBDA_TASK_ROOT}
+
+# Set the CMD to your handler
+CMD [ "app.handler" ]
