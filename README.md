@@ -22,3 +22,4 @@ The main goal was to implement a serverless architecture using custom Docker ima
 
 ## ✅ Results
 The function was successfully tested, confirming that the containerized environment correctly handles requests and returns the expected JSON payload.
+![Success Test Result](success_test.png)
